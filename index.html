@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color-Changing Website</title>
+    <link rel="shortcut icon" href="images/programming-logo.jpg" type="image/jpg">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">ColorSite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+                <div class="d-flex align-items-center">
+                    <div class="colors me-3">
+                        <div class="color-option" data-color="#0d6efd"></div>
+                        <div class="color-option" data-color="#6f42c1"></div>
+                        <div class="color-option" data-color="#dc3545"></div>
+                        <div class="color-option" data-color="#fd7e14"></div>
+                        <div class="color-option" data-color="#198754"></div>
+                    </div>
+                    <button id="darkModeToggle" class="btn btn-sm btn-outline-light ms-4">
+                        <i class="bi bi-moon-fill"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+<!--======================================================================================================================================================================================================================-->    
+
+    <!-- Home Section -->
+    <section id="home" class="home-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="home-title mb-4">Welcome to Our Website</h1>
+                    <p class="home-subtitle mb-4">We create <span class="highlight">amazing digital experiences</span> that help businesses grow.</p>
+                    <div class="hero-cta">
+                        <a href="#services" class="btn home-btn me-3">Our Services</a>
+                        <a href="#contact" class="btn home-outline-btn">Contact Us</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="home-img-container">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Digital creativity" class="img-fluid home-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--======================================================================================================================================================================================================================--> 
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-5">About Us</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h3 class="section-subtitle mb-3">Our Story</h3>
+                    <p class="about-text mb-4">Founded in 2015, we started as a small team passionate about creating exceptional digital experiences.</p>
+                    <h3 class="section-subtitle mb-3">Our Mission</h3>
+                    <p class="about-text mb-4">We deliver innovative solutions combining cutting-edge technology with user-centered design.</p>
+                    <ul class="about-list list-unstyled">
+                        <li class="mb-2"><i class="fas fa-check-circle me-2"></i> 50+ Successful Projects</li>
+                        <li class="mb-2"><i class="fas fa-check-circle me-2"></i> 98% Client Satisfaction</li>
+                        <li class="mb-2"><i class="fas fa-check-circle me-2"></i> Award-Winning Team</li>
+                    </ul>
+                    <button class="btn about-btn mt-3">Learn More</button>
+                </div>
+                <div class="col-lg-6">
+                    <div class="about-img-container">
+                        <img src="images/about-team.png" alt="Our team" class="img-fluid rounded shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--======================================================================================================================================================================================================================--> 
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center mb-5">Our Services</h2>
+
+        <div class="row mb-5 g-4">             
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <div class="card-img">
+                        <img src="images/web-programming-languages.jpg" alt="Web Development">
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title section-subtitle mb-3">Web Development</h4>
+                        <p class="card-text service-description">Learn the fundamentals of building websites using HTML, CSS, and JavaScript. Create responsive, interactive, and modern web pages from scratch.</p>
+                        <a href="#" class="btn service-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <div class="card-img">
+                        <img src="images/software-engineering-featured.jpg" alt="Software Engineering">
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title section-subtitle mb-3">Software Engineering</h4>
+                        <p class="card-text service-description">Master the software development lifecycle, from design to deployment. Learn to build and manage robust, scalable software in a team environment.</p>
+                        <a href="#" class="btn service-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <div class="card-img">
+                        <img src="images/Android-Development.jpg" alt="Android Development">
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title section-subtitle mb-3">Android Development</h4>
+                        <p class="card-text service-description">Build dynamic mobile apps for the Android platform. Learn to create user interfaces, manage data, and publish your apps on the Google Play Store using Kotlin.</p>
+                        <a href="#" class="btn service-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-5">       
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <div class="card-img">
+                        <img src="images/Mobile-application.png" alt="Mobile Development">
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title section-subtitle mb-3">Mobile Development</h4>
+                        <p class="card-text service-description">Build apps for iOS and Android. Learn native development with Swift or Kotlin, or use frameworks like Flutter and React Native to create cross-platform applications.</p>
+                        <a href="#" class="btn service-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <div class="card-img">
+                        <img src="images/Cybersecurity.png" alt="Cybersecurity">
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title section-subtitle mb-3">Cybersecurity</h4>
+                        <p class="card-text service-description">Understand secure coding practices and identify common vulnerabilities to build robust and secure applications.</p>
+                        <a href="#" class="btn service-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <div class="card-img">
+                        <img src="images/machine-learning-elearning.jpg" alt="Machine Learning">
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title section-subtitle mb-3">Machine Learning</h4>
+                        <p class="card-text service-description">Get an introduction to AI. Learn about supervised and unsupervised learning, and build predictive models using popular libraries like scikit-learn.</p>
+                        <a href="#" class="btn service-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4 mb-5">       
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <div class="card-img">
+                        <img src="images/Game Development.jpg" alt="Game Development">
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title section-subtitle mb-3">Game Development</h4>
+                        <p class="card-text service-description">Explore the principles of game design and development. Use a game engine like Unity to create 2D and 3D games with physics and graphics.</p>
+                        <a href="#" class="btn service-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <div class="card-img">
+                        <img src="images/devops_course.png" alt="DevOps">
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title section-subtitle mb-3">DevOps</h4>
+                        <p class="card-text service-description">Bridge development and operations by automating software builds, tests, and deployments using tools like Git, Docker, and Kubernetes.</p>
+                        <a href="#" class="btn service-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card service-card h-100">
+                    <div class="card-img">
+                        <img src="images/Network-course.jpg" alt="Network">
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title section-subtitle mb-3">Computer Network</h4>
+                        <p class="card-text service-description">Learn to build applications that communicate over a network. Topics include TCP/IP, sockets, and common protocols like HTTP to create client-server systems.</p>
+                        <a href="#" class="btn service-btn">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6 mx-auto">
+                <div class="card service-card h-100">
+                    <div class="card-img">
+                        <img src="images/Artificial-Intelligence.jpg" alt="AI (Artificial Intelligence)">
+                    </div>
+                    <div class="card-body text-center">
+                        <h4 class="card-title section-subtitle mb-3">AI (Artificial Intelligence)</h4>
+                        <p class="card-text service-description">Gain an introduction to the world of AI. Learn the core concepts behind how machines can simulate human intelligence to solve problems and make decisions. This includes an overview of machine learning, neural networks, and applications like natural language processing.</p>
+                        <a href="#" class="btn service-btn">Learn More</a>
+                    </div>
+                </div>
+        </div>
+        </div>
+    </section>
+
+<!--======================================================================================================================================================================================================================--> 
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="section-title mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <address class="contact-info">
+                        <p><i class="bi bi-geo-alt-fill me-2"></i> 20 W 34th St, New York, USA</p>
+                        <p><i class="bi bi-telephone-fill me-2"></i> +01 234-567-8899</p>
+                        <p><i class="bi bi-clock-fill me-2"></i> Sun-Thu: 9AM-10PM</p>
+                        <p><i class="bi bi-clock-fill me-2"></i> Fri-Sat: 11AM-12AM</p>
+                        <p><i class="bi bi-envelope-fill me-2"></i> contact@example.com</p>
+                        <p><i class="bi bi-browser-chrome me-2"></i> www.website.com</p>
+                    </address>
+
+                    <div class="mt-4 contact-social">
+                        <a href="#" class="btn btn-outline-dark me-2 social-btn"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-dark me-2 social-btn"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-dark me-2 social-btn"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-dark social-btn"><i class="bi bi-linkedin"></i></a>
+                        <div class="mt-3">
+                            <a href="https://maps.app.goo.gl/7f7hjAZwch5Kf2Jy5" target="_blank" class="btn btn-sm btn-outline-dark directions-btn">
+                                <i class="bi bi-signpost-2 me-1"></i> Get Directions
+                            </a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://maps.google.com/maps?q=empire%20state%20building&t=&z=13&ie=UTF8&iwloc=&output=embed" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--======================================================================================================================================================================================================================--> 
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <h5 class="footer-title mb-3">About Us</h5>
+                    <p class="footer-text">Creating exceptional digital experiences since 2015.</p>
+                    <div class="d-flex justify-content-center">
+                        <a href="#" class="btn btn-outline-dark me-2 social-icon"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="btn btn-outline-dark me-2 social-icon"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-dark me-2 social-icon"><i class="bi bi-twitter"></i></a>
+                        <a href="#" class="btn btn-outline-dark social-icon"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="col-md-4 text-center mb-4 mb-md-0">
+                    <h5 class="footer-title mb-3">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#home" class="text-decoration-none footer-link">Home</a></li>
+                        <li class="mb-2"><a href="#about" class="text-decoration-none footer-link">About</a></li>
+                        <li class="mb-2"><a href="#services" class="text-decoration-none footer-link">Services</a></li>
+                        <li><a href="#contact" class="text-decoration-none footer-link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-4 text-center">
+                    <h5 class="footer-title mb-3">Contact</h5>
+                    <ul class="list-unstyled footer-contact">
+                        <li><i class="bi bi-geo-alt-fill me-2"></i> 20 W 34th Street, New York, USA</li>
+                        <li><i class="bi bi-telephone-fill me-2"></i> +01 234-567-8899</li>
+                        <li><i class="bi bi-clock-fill me-2"></i> Sun - Thu: 9:00 AM - 10:00 PM</li>
+                        <li><i class="bi bi-clock-fill me-2"></i> Fri - Sat: 11:00 AM - 12:00 AM</li>
+                        <li><i class="bi bi-envelope-fill me-2"></i> contact@example.com</li>
+                        <li><i class="bi bi-browser-chrome me-2"></i> www.website.com</li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr class="my-4 mx-auto w-75">
+            <div class="text-center">
+                <p class="footer-copyright mb-0">&copy; 2023 ColorSite. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+<!--==================================================================================================================================================================================================================-->  
+
+    <!-- Scroll To Top Start-->
+        <button type="button" class="btn btn-danger" id="scrollTopBtn"><i class="fa-solid fa-chevron-up fs-6 text-white"></i></button>
+    <!-- Scroll To Top End-->
+
+<!--======================================================================================================================================================================================================================--> 
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
